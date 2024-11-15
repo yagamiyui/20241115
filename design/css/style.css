@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+.wrapper{
+    margin-left: 300px;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* sidebar */
+.sidebar{
+    background: #b7d7b2;
+    color: #fff;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* sitename */
+.site-name{
+    background: #d49b55;
+    width: 300px;
+    height: 300px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+.site-name h1,
+.site-name p{
+    margin: 0;
+}
+
+.site-name h1{
+    font-size: 38px;
+    line-height: 48px;
+}
+.site-name p{
+    font-size: 18px;
+    line-height: 22px;
+}
+
+/* nav */
+nav{
+    padding: 0 40px;
+}
+/* pagelist */
+.page-list{
+    margin: 20px 0;
+}
+.page-list li + li{
+    margin-top: 1em;
+}
+
+/* tag */
+.tags{
+    display: flex;
+    gap: 20px 16px;
+    flex-wrap: wrap;
+}
+.tag{
+    background: #d49b55;
+    color: #fff;
+    padding: 4px 16px;
+    border-radius: 20px;
+}
+.tag:hover{
+    background: #444;
+    text-decoration: none;
+}
+
+/* 
+header
+ */
+header{
+    position: relative;
+    height: 614px;
+}
+.header-copy{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: right;
+    margin: 0;
+    background-color: #d49b55;
+}
+header img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+/* 
+main
+ */
+ main{
+    position: relative;
+ }
+ h2{
+    font-size: 24px;
+    margin: 0;
+ }
+
+ /*
+  #section-1
+  */
+#section-1{
+    max-width: 920px;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+    position: absolute;
+    top: -100px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background: #b7d7b2;
+    border-radius: 20px;
+}
+#section-1 .text{
+    flex: 1 0 0 ;
+}
+
+/* カード */
+.cards{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card{
+    width: 480px;
+    padding: 40px;
+    border-radius: 20px;
+    background: #fff;
+    font-weight: bold;
+    line-height: 24px;
+}
+.card p{
+    font-weight: normal;
+}
+/* 
+#section-2
+#section-3
+ */
+ #section-2,
+ #section-3{
+    padding: 80px 67px;
+ }
+
+ #section-2 h2,
+ #section-3 h2{
+    max-width: 1000px;
+    margin: 0 auto 40px;
+ }
+/* 
+#section-2
+ */
+ #section-2{
+    background: #386d3d;
+    padding: 180px;
+ }
+ /* 
+#section-3
+ */
+ #section-3 .card{
+    background: #b7d7b2;
+ }
+
+ /* footer */
+ footer{
+    background: #eee;
+    text-align: center;
+    padding: 20px 0;
+ }
+
+ .copyright{
+    font-size: 14px;
+ }
